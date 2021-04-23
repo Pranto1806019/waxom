@@ -1,0 +1,61 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?ce41298e0815a6a370cda2fff54a03c7") format("truetype"),
+url("./flaticon.woff?ce41298e0815a6a370cda2fff54a03c7") format("woff"),
+url("./flaticon.woff2?ce41298e0815a6a370cda2fff54a03c7") format("woff2"),
+url("./flaticon.eot?ce41298e0815a6a370cda2fff54a03c7#iefix") format("embedded-opentype"),
+url("./flaticon.svg?ce41298e0815a6a370cda2fff54a03c7#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "chat": "\f101",
+    "users": "\f102",
+    "folder": "\f103",
+    "settings": "\f104",
+    "pencil": "\f105",
+    "layers": "\f106",
+    "coffee-cup": "\f107",
+    "heart": "\f108",
+    "desk-bell": "\f109",
+);
+
+.flaticon-chat:before {
+    content: map-get($flaticon-map, "chat");
+}
+.flaticon-users:before {
+    content: map-get($flaticon-map, "users");
+}
+.flaticon-folder:before {
+    content: map-get($flaticon-map, "folder");
+}
+.flaticon-settings:before {
+    content: map-get($flaticon-map, "settings");
+}
+.flaticon-pencil:before {
+    content: map-get($flaticon-map, "pencil");
+}
+.flaticon-layers:before {
+    content: map-get($flaticon-map, "layers");
+}
+.flaticon-coffee-cup:before {
+    content: map-get($flaticon-map, "coffee-cup");
+}
+.flaticon-heart:before {
+    content: map-get($flaticon-map, "heart");
+}
+.flaticon-desk-bell:before {
+    content: map-get($flaticon-map, "desk-bell");
+}
